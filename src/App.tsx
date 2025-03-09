@@ -1,10 +1,11 @@
 import About from './Component/Body/About/About';
+import React from 'react';
 
 function App() {
   return (
-    <div className="container">
+    <React.StrictMode>
       <About></About>
-    </div>
+    </React.StrictMode>
   );
 }
 

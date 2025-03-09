@@ -1,0 +1,31 @@
+.card_container {
+  /* border: 1px solid black; */
+  padding: 1rem;
+  border-radius: 0.6rem;
+  margin: 1rem 0rem;
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.card_container > div {
+  /* border: 1px solid green; */
+  margin-bottom: 0.5rem;
+}
+.card_title {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.card_image {
+  border-radius: 0.2rem !important;
+}
+.card_name {
+  font: 1.1rem;
+}
+.card_description {
+  /* border: 1px solid black; */
+  max-height: 152px;
+  overflow: scroll;
+}
+.card_description > p {
+  /* border: 1px solid green; */
+}
