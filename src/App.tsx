@@ -5,7 +5,6 @@ import Navbar from './Component/Navbar/Navbar';
 import Loader from './Component/Loader/Loader';
 import Product from './Component/Product/Product';
 import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';
-import React from 'react';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
