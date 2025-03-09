@@ -1,0 +1,12 @@
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa; /* Light background */
+}
+
+.loader-video {
+  width: 250px; /* Adjust as needed */
+  height: auto;
+}

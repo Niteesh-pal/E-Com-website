@@ -1,0 +1,46 @@
+.card-container {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.card {
+  width: 320px;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 250px;
+  padding: 10px;
+  border: 2px salmon;
+  border-radius: 15px;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 15px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,56 @@
+/* Navbar Styles */
+.navbar {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease-in-out;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.1);
+  color: rgb(239, 167, 167);
+}
+
+.navbar-nav .nav-item {
+  margin: 0 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item:hover {
+  transform: translateY(-3px);
+  color: rgb(239, 167, 167);
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.2rem;
+  color: white !important;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  color: rgb(239, 167, 167);
+  background: rgb(248, 172, 172);
+  transition: width 0.3s;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
