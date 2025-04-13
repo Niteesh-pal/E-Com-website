@@ -1,5 +1,4 @@
-import React from 'react';
-import { Search, Filter, Menu } from 'lucide-react';
+import { Search } from 'lucide-react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Home.css';
 import Card from '../Card/Card';
