@@ -5,6 +5,7 @@ import Navbar from './Component/Navbar/Navbar';
 import Loader from './Component/Loader/Loader';
 import Product from './Component/Product/Product';
 import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';
+import Landpage from './Component/Landpage/Landpage';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -27,7 +28,8 @@ function App() {
             <Navbar />
 
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={<Landpage />} />
+              <Route path="/home" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/product" element={<Product />} />
             </Routes>

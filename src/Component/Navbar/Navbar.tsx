@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4">
       {/* Logo */}
-      <a className="navbar-brand d-flex align-items-center" href="#">
+      <a className="navbar-brand d-flex align-items-center" href="/">
         <span className="logo-text">PlyWood</span>
       </a>
 
@@ -31,22 +31,22 @@ const Navbar: React.FC = () => {
       >
         <ul className="navbar-nav mx-auto text-center">
           <li className="nav-item">
-            <a className="nav-link" href="#home">
+            <a className="nav-link" href="/home">
               Home
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#about">
+            <a className="nav-link" href="/about">
               About
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#contact">
+            <a className="nav-link" href="/contact">
               Contact
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#testimonial">
+            <a className="nav-link" href="/testimonial">
               Testimonial
             </a>
           </li>

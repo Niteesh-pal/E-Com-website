@@ -13,8 +13,13 @@ const Card: React.FC<Card> = ({ image, name, size }) => {
   const navigate = useNavigate();
 
   const prod = () => {
-    navigate('/product');
+    if (name === 'WPC Sheets') {
+      navigate('/product');
+    }
   };
+
+  const isWPCSheets = name === 'WPC Sheets';
+
   return (
     <div className="card-container">
       <div className="card shadow-lg">
@@ -22,8 +27,16 @@ const Card: React.FC<Card> = ({ image, name, size }) => {
         <div className="card-body text-center">
           <h5 className="card-title">{name}</h5>
           <p className="card-text text-dark">Size: {size}</p>
-          <Link to="/product">
-            <button className="btn btn-dark" onClick={prod}>
+
+          <Link
+            to={isWPCSheets ? '/product' : '#'}
+            onClick={(e) => !isWPCSheets && e.preventDefault()}
+          >
+            <button
+              className={`btn ${isWPCSheets ? 'btn-dark' : 'btn-secondary disabled'}`}
+              disabled={!isWPCSheets}
+              onClick={prod}
+            >
               View Details
             </button>
           </Link>

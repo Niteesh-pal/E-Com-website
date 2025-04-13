@@ -1,8 +1,9 @@
 /* Container */
-.container {
+.prod-container {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   padding: 50px;
   gap: 40px;
 }
@@ -100,7 +101,8 @@
 
 /* Features */
 .featuresList {
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-left: -30px;
   list-style: none;
 }
 
@@ -131,14 +133,16 @@
 
 @media (max-width: 768px) {
   /* Applies styles when screen width is 768px or smaller */
-  .container {
+  .prod-container {
     display: flex;
     flex-direction: column;
     gap: 30px;
   }
 
   .imageContainer {
-    width: 320px;
+    object-fit: cover;
+    padding: 20px;
+    width: 350px;
     height: 250px;
   }
 

@@ -6,16 +6,20 @@ import Card from '../Card/Card';
 
 const products = [
   {
-    name: 'WPC Wall Panels',
-    size: '24"x26"x36"',
-    image: '/media/chatter1.jpg',
+    name: 'WPC Sheets',
+    size: 'Multiple sizes',
+    image: '/media/chatter3.jpg',
   },
   {
     name: 'WPC Decorative Panels',
     size: '36"x72"x30"',
     image: '/media/chatter2.jpg',
   },
-  { name: 'WPC Boards', size: '84"x36"x32"', image: '/media/chatter3.jpg' },
+  {
+    name: 'WPC Wall Panels',
+    size: '84"x36"x32"',
+    image: '/media/chatter1.jpg',
+  },
   {
     name: 'WPC Ceiling Panels',
     size: '48"x24"x72"',
